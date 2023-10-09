@@ -1,0 +1,114 @@
+/******************************************************************************
+“Negativo y positivo”
+Nombre: Elisa Michelle Medina Vázquez 
+Fecha: 230822
+*******************************************************************************/
+#include <iostream>
+using namespace std;
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+    int num;
+    int multiplos_de_3 = 0;
+    int eleccion;
+    int i, n, positivos;
+    float numero, promedio_positivos;
+    int resultado;
+    int positivo,negativo,cero,cant;
+    positivo=0;
+    negativo=0;
+    cero=0;
+    
+    do
+    {
+        cout<<"Seleccione el numero de la opcion que quiere realizar: " <<endl;
+        cout<<"\n1) Cantidad de pares"<<endl;
+        cout<<"\n2) Cantidad de múltiplos de 3"<<endl;
+        cout<<"\n3) Promedio de números positivos"<<endl;
+        cout<<"\n4) Cantidad de números negativos"<<endl;
+        cin>>eleccion;
+       
+     switch(eleccion){
+         
+case 1:
+     
+cout<<"Ingrese un numero para verificar si es par"<<endl;
+cin>>num;
+resultado=(num%2);
+if (resultado>0)
+{
+    
+cout<<"Es par"<< endl;
+
+}
+
+else {
+
+cout<<"No valido"<<endl;
+
+}
+
+break;
+
+case 2:
+    
+        cout<<"Inserte un valor";
+        cin>>num;
+        resultado=num%3;
+        if(resultado == 0)
+        {
+            cout<<"El numero "<<num<<"Es multiplo de 3"<< endl;
+            
+        }
+        else
+        {
+            cout<<"El numero "<< num<<"No es valido"<<resultado<< endl;
+        }
+
+    
+break;
+
+case 3:
+
+    {
+        cout<<("Ingresa el valor de numero:");
+        cin>>num;
+        if(numero>0)
+        promedio_positivos=num%2;
+        cout<<("El promedio es:")<<promedio_positivos;
+        {
+}
+
+    
+break;
+
+
+case 4:
+  
+
+        cout<<"Introduzca un Numero:";
+        cin>>num;
+        if (num>-0)
+        
+        {
+            cout<<"No valido:";
+        
+  }
+  else
+  {
+     cout<<"Es negativo:";
+  }
+            
+break;
+
+}
+}
+}
+while(eleccion > 0 and eleccion < 4);
+return 0; 
+} 
+
